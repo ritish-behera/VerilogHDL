@@ -1,0 +1,22 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Sep 14, 2024 at 05:12:03 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		VendingMachine_tb
+Loading snapshot worklib.VendingMachine_tb:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+SodaSelected=1, coins=2, Returned=0, Dispensed=0
+SodaSelected=1, coins=2, Returned=0, Dispensed=1
+Thank you for using the vending machine!
+Simulation complete via $finish(1) at time 40 NS + 0
+./testbench.sv:25       $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Sep 14, 2024 at 05:12:04 EDT  (total: 00:00:01)
