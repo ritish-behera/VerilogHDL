@@ -1,0 +1,24 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Sep 14, 2024 at 05:11:30 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		tb_fulladd
+Loading snapshot worklib.tb_fulladd:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+a=0x0 b=0x0 c_in=0x0 c_out=0x0 sum=0x0
+a=0x4 b=0x1 c_in=0x1 c_out=0x0 sum=0x6
+a=0x3 b=0xd c_in=0x1 c_out=0x1 sum=0x1
+a=0x5 b=0x2 c_in=0x1 c_out=0x0 sum=0x8
+a=0xd b=0x6 c_in=0x1 c_out=0x1 sum=0x4
+a=0xd b=0xc c_in=0x1 c_out=0x1 sum=0xa
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Sep 14, 2024 at 05:11:31 EDT  (total: 00:00:01)

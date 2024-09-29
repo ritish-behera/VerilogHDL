@@ -1,0 +1,38 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Sep 14, 2024 at 05:16:17 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		memory_tb
+Loading snapshot worklib.memory_tb:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+Initializing memory...
+Verifying memory contents...
+Error: Expected 0 at address 0, got x
+Data at address 1: 8
+Data at address 2: 10
+Data at address 3: 18
+Data at address 4: 20
+Data at address 5: 28
+Data at address 6: 30
+Data at address 7: 38
+Data at address 8: 40
+Data at address 9: 48
+Data at address a: 50
+Data at address b: 58
+Data at address c: 60
+Data at address d: 68
+Data at address e: 70
+Data at address f: 78
+Testbench completed successfully
+Simulation complete via $finish(1) at time 315 NS + 0
+./testbench.sv:49       $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Sep 14, 2024 at 05:16:18 EDT  (total: 00:00:01)

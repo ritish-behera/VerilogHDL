@@ -1,0 +1,19 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Sep 14, 2024 at 05:16:50 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		always_clock
+Loading snapshot worklib.always_clock:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+Simulation complete via $finish(1) at time 500 NS + 0
+./design.sv:9     #500 $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Sep 14, 2024 at 05:16:52 EDT  (total: 00:00:02)

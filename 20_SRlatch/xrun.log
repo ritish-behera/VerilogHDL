@@ -1,0 +1,27 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Sep 14, 2024 at 05:15:23 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		srlatch_tb
+Loading snapshot worklib.srlatch_tb:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+                   0ps=0,s=0,r=0,ns=0
+                   5ps=0,s=1,r=0,ns=1
+                  10ps=0,s=0,r=1,ns=0
+                  15ps=0,s=1,r=1,ns=x
+                  20ps=1,s=0,r=0,ns=1
+                  25ps=1,s=1,r=0,ns=1
+                  30ps=1,s=0,r=1,ns=0
+                  35ps=1,s=1,r=1,ns=x
+Simulation complete via $finish(1) at time 50 NS + 0
+./testbench.sv:17   initial #50 $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Sep 14, 2024 at 05:15:25 EDT  (total: 00:00:02)

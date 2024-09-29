@@ -1,0 +1,20 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Sep 14, 2024 at 05:14:58 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		ripplecounter_tb
+Loading snapshot worklib.ripplecounter_tb:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+                   0clk=1,clear=0,q=0000
+Simulation complete via $finish(1) at time 50 NS + 0
+./testbench.sv:14   initial #50 $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Sep 14, 2024 at 05:14:59 EDT  (total: 00:00:01)

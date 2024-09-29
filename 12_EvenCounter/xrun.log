@@ -1,0 +1,39 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Sep 14, 2024 at 05:12:53 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+	Top level design units:
+		EvenCounter_tb
+Loading snapshot worklib.EvenCounter_tb:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+                   0 clk=1, reset=0, count=2
+                   5 clk=0, reset=0, count=4
+                  10 clk=1, reset=0, count=6
+                  15 clk=0, reset=0, count=0
+                  20 clk=1, reset=0, count=2
+                  25 clk=0, reset=0, count=4
+                  30 clk=1, reset=0, count=6
+                  35 clk=0, reset=0, count=0
+                  40 clk=1, reset=0, count=2
+                  45 clk=0, reset=0, count=4
+                  50 clk=1, reset=0, count=6
+                  55 clk=0, reset=0, count=0
+                  60 clk=1, reset=0, count=2
+                  65 clk=0, reset=0, count=4
+                  70 clk=1, reset=0, count=6
+                  75 clk=0, reset=0, count=0
+                  80 clk=1, reset=1, count=0
+                  85 clk=0, reset=1, count=0
+                  90 clk=1, reset=1, count=0
+                  95 clk=0, reset=1, count=0
+Simulation complete via $finish(1) at time 100 NS + 0
+./testbench.sv:16   initial #100 $finish;
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Sep 14, 2024 at 05:12:54 EDT  (total: 00:00:01)

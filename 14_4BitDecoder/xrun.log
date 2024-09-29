@@ -1,0 +1,21 @@
+xrun: 23.09-s001: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun	23.09-s001: Started on Sep 14, 2024 at 05:10:31 EDT
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	design.sv
+	testbench.sv
+    reg [7:0] Y;
+              |
+xmvlog: *W,ILLPDX (design.sv,3|14): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'Y') [12.3.4(IEEE-2001)].
+	Top level design units:
+		decoder
+Loading snapshot worklib.decoder:sv .................... Done
+xcelium> source /xcelium23.09/tools/xcelium/files/xmsimrc
+xcelium> run
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xrun	23.09-s001: Exiting on Sep 14, 2024 at 05:10:33 EDT  (total: 00:00:02)
